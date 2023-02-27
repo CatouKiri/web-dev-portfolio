@@ -4,3 +4,26 @@
     --accent-1: #393E46;
     --accent-2: #EEEEEE;
 }
+
+* {
+    font-family: 'poppins', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+.hero {
+    font-weight: 700;
+    height: 100vh;
+    background-image: linear-gradient(rgba(3, 4, 7, 0.9), rgba(5, 10, 30, 0.9)), url("images/hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-navigation {
+    position: fixed;
+}
