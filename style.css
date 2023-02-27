@@ -6,7 +6,7 @@
 }
 
 * {
-    font-family: 'poppins', Times, serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,6 +24,30 @@ body::-webkit-scrollbar {
     background-position: center;
 }
 
-.hero-navigation {
-    position: fixed;
+.hero-text h1, .hero-text h2{
+    color: #F8F9FA;
+    font-weight: 700;
+    width: 100vw;
+    text-align: center;
 }
+
+.hero-text h1 {
+    font-size: 68px;
+}
+
+/* navbar style withour bootstrap */
+/* .hero-navigation-list {
+    padding: 10px;
+    background-color: var(--accent-1);
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.hero-navigation-list-item a {
+    text-decoration: none;
+    color: var(--accent-2);
+    margin: 0 5px;
+}
+ */
