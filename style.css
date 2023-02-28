@@ -16,6 +16,7 @@ body::-webkit-scrollbar {
     display: none;
   }
 
+/* hero section */
 .hero {
     font-weight: 700;
     height: 100vh;
@@ -31,9 +32,26 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
-.hero-text h1 {
-    font-size: 68px;
+.hero-text-name {
+    color: var(--primary-color);
 }
+
+.hero-text h1 {
+    font-size: 75px;
+}
+
+.hero-text h2 {
+    font-size: 45px;
+}
+
+@media only screen and (max-width: 912px) {
+    .hero-text h1 {
+        font-size: 45px;
+      }
+    .hero-text h2 {
+        font-size: 35px;
+    }
+  }
 
 /* navbar style withour bootstrap */
 /* .hero-navigation-list {
