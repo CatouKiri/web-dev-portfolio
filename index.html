@@ -1,128 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ed Benedict Quia | Full Stack Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ed Benedict Quia | Full Stack Web Developer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap"
-    rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
-    defer></script>
-</head>
-
-<body>
-  <section class="hero d-flex justify-content-center flex-column align-items-center">
-    <nav class="navbar fixed-top navbar-expand bg-body-tertiary" data-bs-theme="dark">
-      <div class="container-fluid">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="hero__text">
-      <h1>Hi, I'm <span class="hero-text-name">Ed Benedict Quia</span></h1>
-      <h2>A full stack web developer</h2>
-    </div>
-  </section>
-
-  <section class="about">
-    <div class="container">
-      <div class="row">
-        <div class="about__container col-lg-6">
-          <div class="about__about-me">
-            <h2 class="about__header">ABOUT ME</h2>
-            <p>
-              I am Ed Benedict B. Quia, a graduate of Bachelor of Science in
-              Information Technology at Don Mariano Memorial Marcos State
-              University. I'm a passionate web developer, that strives to
-              create meaningful websites and applications that are both
-              aesthetically pleasing and functionally sound.
-            </p>
-          </div>
-          <div class="about__experience">
-            <h2 class="about__header">EXPERIENCE</h2>
-            <p>
-              Administrative Aide I - Office of the Municipal Assessor of
-              Bacnotan La Union 2019 - present <br>
-              As an administrative aide, I have a wide variety of responsibilities. On a daily basis, I keep and maintain records of my work and interactions. Additionally, I often entertain clients and process any legal documents that require validation. I'm also responsible for filing paperwork, processing forms, and ensuring that all documents are accurate and up-to-date.</p>
-          </div>
+  <body>
+    <!--*************************************** hero section ***************************************-->
+    <section
+      class="hero d-flex justify-content-center flex-column align-items-center"
+    >
+      <nav
+        class="navbar fixed-top navbar-expand bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="about__container col-lg-6">
-          <h2 class="about__header">SKILLS</h2>
-          <div class="skills__container">
-            <div class="skills__row">
-              <div class="skills__item">
+      </nav>
+      <div class="hero__text">
+        <h1>Hi, I'm <span class="hero-text-name">Ed Benedict Quia</span></h1>
+        <h2>A full stack web developer</h2>
+      </div>
+    </section>
+
+    <!--*************************************** about section ***************************************-->
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="about__container col-lg-6">
+            <div class="about__about-me">
+              <h2 class="about__header">ABOUT ME</h2>
+              <p>
+                I am Ed Benedict B. Quia, a graduate of Bachelor of Science in
+                Information Technology at Don Mariano Memorial Marcos State
+                University. I'm a passionate web developer, that strives to
+                create meaningful websites and applications that are both
+                aesthetically pleasing and functionally sound.
+              </p>
+            </div>
+            <div class="about__experience">
+              <h2 class="about__header">EXPERIENCE</h2>
+              <p>
+                Administrative Aide I - Office of the Municipal Assessor of
+                Bacnotan La Union 2019 - present <br />
+                As an administrative aide, I have a wide variety of
+                responsibilities. On a daily basis, I keep and maintain records
+                of my work and interactions. Additionally, I often entertain
+                clients and process any legal documents that require validation.
+                I'm also responsible for filing paperwork, processing forms, and
+                ensuring that all documents are accurate and up-to-date.
+              </p>
+            </div>
+          </div>
+          <div class="about__container col-lg-6">
+            <h2 class="about__header">SKILLS</h2>
+            <div class="skills__container">
+              <div class="skills__row">
+                <div class="skills__item">
                   <img src="images/skills-logo/html.png" alt="" />
                   <h3 class="skills__text">HTML</h3>
-              </div>
-              <div class="skills__item">
+                </div>
+                <div class="skills__item">
                   <img src="images/skills-logo/css.png" alt="" />
                   <h3 class="skills__text">CSS</h3>
-              </div>
-              <div class="skills__item">
+                </div>
+                <div class="skills__item">
                   <img src="images/skills-logo/javasript.png" alt="" />
                   <h3 class="skills__text">JAVASRIPT</h3>
+                </div>
               </div>
-            </div>
-            <div class="skills__row">
-              <div class="skills__item">
+              <div class="skills__row">
+                <div class="skills__item">
                   <img src="images/skills-logo/figma.png" alt="" />
                   <h3 class="skills__text">FIGMA</h3>
-              </div>
-              <div class="skills__item">
+                </div>
+                <div class="skills__item">
                   <img src="images/skills-logo/git.png" alt="" />
                   <h3 class="skills__text">GIT</h3>
-              </div>
-              <div class="skills__item">
+                </div>
+                <div class="skills__item">
                   <img src="images/skills-logo/github.png" alt="" />
                   <h3 class="skills__text">GITHUB</h3>
+                </div>
               </div>
-            </div>
-            <div class="skills__row">
-              <div class="skills__item">
+              <div class="skills__row">
+                <div class="skills__item">
                   <img src="images/skills-logo/node.png" alt="" />
                   <h3 class="skills__text">NODE.JS</h3>
-              </div>
-              <div class="skills__item">
+                </div>
+                <div class="skills__item">
                   <img src="images/skills-logo/php.png" alt="" />
                   <h3 class="skills__text">PHP</h3>
-              </div>
-              <div class="skills__item">
+                </div>
+                <div class="skills__item">
                   <img src="images/skills-logo/XAMPP.png" alt="" />
                   <h3 class="skills__text">XAMPP</h3>
+                </div>
               </div>
+              <div class="skills__row"></div>
             </div>
-            <div class="skills__row"></div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="projects"></section>
+    <!--*************************************** projects section ***************************************-->
+    <section class="projects">
+      <h2 class="projects__header">PROJECTS</h2>
+      <div class="container">
+        <div class="project__row row">
+          <div class="project__container project--left col-lg-6">
+            <a
+              class="project--left"
+              target="_blank"
+              href="https://catoukiri.github.io/Rock-Paper-Scissors/"
+              ><img
+                src="images/projects-thumbnail/rock-paper-scissors.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="project__container col-lg-6">
+            <h3 class="project__name">ROCK PAPER SCISSORS</h3>
+            <ul class="project__tool-list project--right">
+              <li><h4>HTML</h4></li>
+              <li><h4>CSS</h4></li>
+              <li><h4>JAVASRIPT</h4></li>
+            </ul>
+            <p>
+              Rock Paper Scissors is a simple game played with three choices.
+              Your browser will do all the work for you! Just click a rock,
+              paper or scissor to start the game. The player who scores five
+              times first will be the winner.
+            </p>
+          </div>
+        </div>
+        <div class="project__row row">
+          <div class="project__container col-lg-6">
+            <h3 class="project__name project--left">ETCH A SKETCH</h3>
+            <ul class="project__tool-list project--left">
+              <li><h4>HTML</h4></li>
+              <li><h4>CSS</h4></li>
+              <li><h4>JAVASRIPT</h4></li>
+            </ul>
+            <p class="project--left">
+              A simple Etch A Sketch website. It is designed to allow you to change the size of the canvas, color and pen for the sketchy etch a sketch. The software was written in HTML, CSS and JavaScript.
+            </p>
+          </div>
+          <div class="project__container col-lg-6">
+            <a
+              class="project--right"
+              target="_blank"
+              href="https://catoukiri.github.io/Rock-Paper-Scissors/"
+              ><img
+                src="images/projects-thumbnail/rock-paper-scissors.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact"></section>
 
-  <section class="contact"></section>
-
-  <section class="footer"></section>
-</body>
-
+    <section class="footer"></section>
+  </body>
 </html>
