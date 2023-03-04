@@ -176,7 +176,8 @@ body::-webkit-scrollbar {
 
 @media only screen and (max-width: 991px) {
   .project--left,
-  .project--right {
+  .project--right,
+  .project__container {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -200,7 +201,7 @@ body::-webkit-scrollbar {
   box-shadow: 0 0 40px 10px #000000;
   color: black;
   padding: 6%;
-  margin: 0 auto 5%;
+  margin: 0 auto 0;
 }
 
 .contact__header {
