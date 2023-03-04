@@ -1,71 +1,125 @@
 :root {
-    --primary-color: #00adb5;
-    --secondary-color: #22831;
-    --accent-1: #393E46;
-    --accent-2: #EEEEEE;
+  --primary-color: #00adb5;
+  --secondary-color: #212529;
+  --accent-1: #393e46;
+  --accent-2: rgb(237, 237, 237);
 }
 
 * {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {
-    display: none;
-  }
-
-/* hero section */
-.hero {
-    font-weight: 700;
-    height: 100vh;
-    background-image: linear-gradient(rgba(3, 4, 7, 0.9), rgba(5, 10, 30, 0.9)), url("images/hero-background.jpg");
-    background-size: cover;
-    background-position: center;
+  display: none;
 }
 
-.hero-text h1, .hero-text h2{
-    color: #F8F9FA;
-    font-weight: 700;
-    width: 100vw;
-    text-align: center;
+/**************************************** hero section ****************************************/
+.hero {
+  font-weight: 600;
+  height: 100vh;
+  background-image: linear-gradient(rgba(3, 4, 7, 0.9), rgba(5, 10, 30, 0.9)),
+    url("images/hero-background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__text > * {
+  color: #f8f9fa;
+  font-weight: 700;
+  width: 100vw;
+  text-align: center;
 }
 
 .hero-text-name {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
-.hero-text h1 {
-    font-size: 75px;
+.hero__text h1 {
+  font-size: 75px;
 }
 
-.hero-text h2 {
-    font-size: 45px;
+.hero__text h2 {
+  font-size: 45px;
 }
 
 @media only screen and (max-width: 912px) {
-    .hero-text h1 {
-        font-size: 45px;
-      }
-    .hero-text h2 {
-        font-size: 35px;
-    }
+  .hero__text h1 {
+    font-size: 45px;
   }
 
-/* navbar style withour bootstrap */
-/* .hero-navigation-list {
-    padding: 10px;
-    background-color: var(--accent-1);
-    list-style-type: none;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+  .hero__text h2 {
+    font-size: 35px;
+  }
 }
 
-.hero-navigation-list-item a {
-    text-decoration: none;
-    color: var(--accent-2);
-    margin: 0 5px;
+@media only screen and (max-width: 575px) {
+  .hero__text h1 {
+    font-size: 28px;
+  }
+
+  .hero__text h2 {
+    font-size: 24px;
+  }
 }
- */
+
+/**************************************** about section ****************************************/
+
+.about {
+  background-color: var(--primary-color);
+  padding: 20px 0 60px 0;
+}
+
+.about__header {
+  text-align: center;
+  margin: 40px 0 20px 0;
+  font-weight: 700;
+}
+
+.skills__container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.skills__row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+img {
+  max-height: 100px;
+  box-shadow: #393e46;
+}
+
+.skills__item {
+  background-color: var(--accent-2);
+  box-shadow: inset 0 0 10px var(--secondary-color);
+  border-style: solid;
+  border-radius: 5%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.skills__text {
+  font-size: 20px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 575px) {
+  img {
+    width: 50%;
+  }
+
+  .skills__text {
+    font-size: 4vw;
+  }
+}
+
