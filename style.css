@@ -38,6 +38,13 @@ body::-webkit-scrollbar {
   text-align: center;
 }
 
+.hero-image {
+  width: 25%;
+  border-radius: 50%;
+  border: #f8f9fa;
+  border-style: solid;
+}
+
 .hero-text-name {
   color: var(--primary-color);
 }
