@@ -361,7 +361,7 @@ div .footer__links {
 }
 
 /**************************************** animation on scroll ****************************************/
-.hidden {
+/* .hidden {
   opacity: 0;
   filter: blur(3px);
   transition: all 1.5s;
@@ -387,4 +387,4 @@ div .footer__links {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-}
+} */
