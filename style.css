@@ -395,8 +395,8 @@ div .footer__links {
 
 @media only screen and (max-width: 767px) {    
   .hidden {
-    opacity: 100;
-    filter: blur(0px);
+    opacity: default;
+    filter: none;
     transition: none;
   }
 }
