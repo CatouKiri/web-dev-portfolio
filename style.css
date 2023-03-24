@@ -57,6 +57,10 @@ body::-webkit-scrollbar {
   font-size: 45px;
 }
 
+nav {
+  width: 100vw;
+}
+
 @media only screen and (max-width: 912px) {
   .hero-image {
   width: 40%;
@@ -361,7 +365,7 @@ div .footer__links {
 }
 
 /**************************************** animation on scroll ****************************************/
-/* .hidden {
+.hidden {
   opacity: 0;
   filter: blur(3px);
   transition: all 1.5s;
@@ -387,4 +391,12 @@ div .footer__links {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-} */
+}
+
+@media only screen and (max-width: 767px) {    
+  .hidden {
+    opacity: 100;
+    filter: blur(0px);
+    transition: none;
+  }
+}
