@@ -368,7 +368,7 @@ div .footer__links {
 .hidden {
   opacity: 0;
   filter: blur(3px);
-  transition: all 1.5s;
+  transition: all 1s;
 }
 
 .h-top {
