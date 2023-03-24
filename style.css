@@ -168,8 +168,7 @@ body::-webkit-scrollbar {
 }
 
 .project__container img {
-  width: 100%;
-  aspect-ratio: ;
+  max-width: 100%;
   box-shadow: 0 0 20px 10px #000000;
 }
 
