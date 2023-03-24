@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
   font-weight: 600;
   height: 100vh;
   background-image: linear-gradient(rgba(3, 4, 7, 0.9), rgba(5, 10, 30, 0.9)),
-    url('images/hero-background.jpg');
+    url("images/hero-background.jpg");
   background-size: cover;
   background-position: center;
 }
