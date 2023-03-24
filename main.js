@@ -1,3 +1,4 @@
+// navbar 
 const navLi = document.querySelectorAll('nav div ul li a');
 const sections = document.querySelectorAll('section');
 
@@ -15,6 +16,8 @@ window.addEventListener('scroll', () => {
     });
 });
 
+
+// animation on scroll
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
