@@ -168,8 +168,7 @@ body::-webkit-scrollbar {
 }
 
 .project__container img {
-  max-width: 584px;
-  max-height: 300.859px;
+  width: 90%;
   box-shadow: 0 0 20px 10px #000000;
 }
 
