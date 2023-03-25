@@ -1,5 +1,5 @@
 // navbar 
-const navLi = document.querySelectorAll('nav div ul li a');
+const navLi = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('section');
 
 window.addEventListener('scroll', () => {
@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
     });
     navLi.forEach(li => {
         li.classList.remove('active');
-        document.querySelector('nav div ul li a[href*= ' + current + ']').classList.add('active');
+        document.querySelector('.nav-item a[href*= ' + current + ']').classList.add('active');
     });
 });
 
